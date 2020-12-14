@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="FastFood.DomainClass"
+                   namespace="FastFood.DomainClass.Model">
+  <class name="Users">
+    <id name="IdUser" column="IdUser">
+      <generator class="native"/>
+    </id>
+    <property name="FName"/>
+    <property name="LName"/>
+    <property name="NationalCode"/>    
+    <property name="Mobile"/>    
+    <property name="AddressUser"/>    
+    <property name="PicUrl"/>    
+    <property name="StatusAdmin"/>    
+    <property name="Pass"/>    
+    <property name="IsDelete"/>    
+  </class>
+</hibernate-mapping>

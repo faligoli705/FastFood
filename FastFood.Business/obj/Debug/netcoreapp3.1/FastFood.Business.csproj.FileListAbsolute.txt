@@ -1,0 +1,9 @@
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\bin\Debug\netcoreapp3.1\FastFood.Business.deps.json
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\bin\Debug\netcoreapp3.1\FastFood.Business.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\bin\Debug\netcoreapp3.1\FastFood.Business.pdb
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.csprojAssemblyReference.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.AssemblyInfoInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.AssemblyInfo.cs
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.csproj.CoreCompileInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.Business\obj\Debug\netcoreapp3.1\FastFood.Business.pdb

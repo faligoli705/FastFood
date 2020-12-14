@@ -1,0 +1,9 @@
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\bin\Debug\netcoreapp3.1\FastFood.DomainClass.deps.json
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\bin\Debug\netcoreapp3.1\FastFood.DomainClass.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\bin\Debug\netcoreapp3.1\FastFood.DomainClass.pdb
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.csprojAssemblyReference.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.AssemblyInfoInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.AssemblyInfo.cs
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.csproj.CoreCompileInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DomainClass\obj\Debug\netcoreapp3.1\FastFood.DomainClass.pdb

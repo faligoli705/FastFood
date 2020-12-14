@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assambely="FastFood.DomainClass"
+                   namespace="FastFood.DomainClass.Model">
+  <class name="Products">
+    <id name="IdProducts">
+      <generator class="native"/>
+    </id>
+    <property name="IdType"/>
+    <property name="NameFood"/>
+    <property name="Price"/>
+    <property name="DateSave"/>
+    <property name="TimeSave"/>
+    <property name="TimeAmadehSazi"/>    
+    <property name="PicUrl"/>
+    <property name="IsDelete"/>
+    
+    <bag name="Type" table="Types">
+      <key column="IdType"/>
+      <ont-to-many class="Types"/>
+    </bag>
+  </class>
+  
+</hibernate-mapping>

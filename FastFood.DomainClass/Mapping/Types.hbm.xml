@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping2.2"
+                   assembly="FastFood.DomainClass"
+                   namespace="FastFood.DomainClass.Model">
+  <class name="Types">
+    <id name="IdType">
+      <generator class="native"/>
+    </id>
+    <property name="Name"/>
+    <property name="IsDelete"/>
+    
+  </class>
+  
+</hibernate-mapping>

@@ -1,0 +1,427 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood\\FastFood.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\FastFood.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\FastFood.Business.csproj",
+        "projectName": "FastFood.Business",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\FastFood.Business.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\FastFood.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\FastFood.DataLayer.csproj",
+        "projectName": "FastFood.DataLayer",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\FastFood.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.3.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj",
+        "projectName": "FastFood.DomainClass",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.3.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\FastFood.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\FastFood.Utilities.csproj",
+        "projectName": "FastFood.Utilities",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\FastFood.Utilities.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\FastFood.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\FastFood.ViewModels.csproj",
+        "projectName": "FastFood.ViewModels",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\FastFood.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood\\FastFood.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood\\FastFood.csproj",
+        "projectName": "FastFood",
+        "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood\\FastFood.csproj",
+        "packagesPath": "C:\\Users\\aoutumnGirl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aoutumnGirl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\FastFood.Business.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Business\\FastFood.Business.csproj"
+              },
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\FastFood.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DataLayer\\FastFood.DataLayer.csproj"
+              },
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.DomainClass\\FastFood.DomainClass.csproj"
+              },
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\FastFood.Utilities.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.Utilities\\FastFood.Utilities.csproj"
+              },
+              "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\FastFood.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\aoutumnGirl\\source\\repos\\FastFood\\FastFood.ViewModels\\FastFood.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFrameworkProfiler": {
+              "target": "Package",
+              "version": "[6.0.6017, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.3.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

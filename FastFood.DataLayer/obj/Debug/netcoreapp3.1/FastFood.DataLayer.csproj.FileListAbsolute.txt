@@ -1,0 +1,15 @@
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.csprojAssemblyReference.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.AssemblyInfoInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.AssemblyInfo.cs
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DataLayer.deps.json
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DataLayer.runtimeconfig.json
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DataLayer.runtimeconfig.dev.json
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DataLayer.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DataLayer.pdb
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DomainClass.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\bin\Debug\netcoreapp3.1\FastFood.DomainClass.pdb
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.csproj.CopyComplete
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.dll
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.pdb
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood.DataLayer\obj\Debug\netcoreapp3.1\FastFood.DataLayer.genruntimeconfig.cache

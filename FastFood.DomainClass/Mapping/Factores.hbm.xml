@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true"
+                   assambely="FastFood.DomainClass"
+                    namespace="FastFood.DomainClass.Model">
+  <class name="Factors" table="Factors" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="IdFactor" column="IdFactor" type="long">
+      <generator class="native"/>
+    </id>
+    <property name="IdUser"/>
+    <property name="IdProdut"/>
+    <property name="Name"/>
+    <property name="DateSave"/>
+    <property name="TimeSave"/>
+    <property name="AddressUser"/>
+    <property name="IsDelete"/>
+    <bag name="Users" table="Users">
+      <key column="IdUser"/>
+      <one-to-many class="Users"/>
+    </bag>
+    <bag name="Products" table="Products">
+      <key column="IdProduct"/>
+      <one-to-many class="Products"/>
+    </bag>
+  </class>
+</hibernate-mapping>
+
