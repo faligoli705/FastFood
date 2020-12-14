@@ -1,6 +1,8 @@
-﻿using System;
+﻿using NHibernate;
+using NHibernate.Cfg;
+using System;
 using System.Collections.Generic;
-using System.Text;
+ using System.Text;
 
 namespace FastFood.DomainClass.Mapping
 {
