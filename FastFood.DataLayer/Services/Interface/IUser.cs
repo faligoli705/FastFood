@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FastFood.Services.Interface
-{
+namespace FastFood.DataLayer.Services.Interface
     public interface IUser
     {
         ServiceResult<UsersEnt> AddTtpe(UsersEnt users);

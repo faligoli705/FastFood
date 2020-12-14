@@ -1,6 +1,6 @@
-﻿using FastFood.DomainClass.Domain.Entities;
-using FastFood.Services.Interface;
-using System;
+﻿using FastFood.DataLayer.Services.Interface;
+using FastFood.DomainClass.Domain.Entities;
+ using System;
 using System.Collections.Generic;
 using System.Text;
 

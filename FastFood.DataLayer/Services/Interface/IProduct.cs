@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FastFood.Services.Interface
+namespace FastFood.DataLayer.Services.Interface
 {
     public interface IProduct
     {
-        ServiceResult<ProductsEnt> AddTtpe(ProductsEnt product);
+        ServiceResult<ProductsEnt> AddProduct(ProductsEnt product);
         ServiceResult<ProductsEnt> UpdateProduct(ProductsEnt product);
         ServiceResult<ProductsEnt> DeleteProduct(int id);
         ServiceResult<ProductsEnt> GetProductById(int id);

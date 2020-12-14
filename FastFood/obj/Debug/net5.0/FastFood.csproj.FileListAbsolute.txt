@@ -114,3 +114,4 @@ C:\Users\aoutumnGirl\source\repos\FastFood\FastFood\obj\Debug\net5.0\FastFood.dl
 C:\Users\aoutumnGirl\source\repos\FastFood\FastFood\obj\Debug\net5.0\ref\FastFood.dll
 C:\Users\aoutumnGirl\source\repos\FastFood\FastFood\obj\Debug\net5.0\FastFood.pdb
 C:\Users\aoutumnGirl\source\repos\FastFood\FastFood\obj\Debug\net5.0\FastFood.genruntimeconfig.cache
+C:\Users\aoutumnGirl\source\repos\FastFood\FastFood\obj\Debug\net5.0\FastFood.MvcApplicationPartsAssemblyInfo.cs

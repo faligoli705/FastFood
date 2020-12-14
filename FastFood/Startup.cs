@@ -1,6 +1,8 @@
 
 
 using FastFood.DataLayer.DataAccess;
+using FastFood.DataLayer.Services.Interface;
+using FastFood.DataLayer.Services.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +39,7 @@ namespace FastFood
 
             cfg.AddAssembly(Assembly.GetExecutingAssembly());
             var sessionFactory = cfg.BuildSessionFactory();
-            using (var session = sessionFactory.OpenSession()) ;
+            using (var session = sessionFactory.OpenSession())
             using (var tx = session.BeginTransaction())
             {
                 tx.Commit();
@@ -50,11 +52,12 @@ namespace FastFood
             });
             services.AddControllersWithViews();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddScoped<IFactory, Factors>();
+            services.AddTransient<IProduct, Products>();
+            services.AddTransient<IType, Types>();
+            services.AddTransient<IUser,Users>(); 
 
-
-
-            //var conStr = this.Configuration.GetConnectionString("conString");
-            services.AddControllers();
+             services.AddControllers();
 
             services.AddSwaggerGen(c =>
            {

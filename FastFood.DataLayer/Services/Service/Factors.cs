@@ -8,7 +8,7 @@ namespace FastFood.DataLayer.Services.Service
 {
     public class Factors : IFactory
     {
-        public ServiceResult<FactorsEnt> AddTtpe(FactorsEnt factorys)
+        public ServiceResult<FactorsEnt> AddFactory(FactorsEnt factorys)
         {
             throw new NotImplementedException();
         }
