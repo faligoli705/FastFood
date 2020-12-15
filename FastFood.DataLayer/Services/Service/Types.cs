@@ -8,27 +8,27 @@ namespace FastFood.DataLayer.Services.Service
 {
     public class Types : IType
     {
-        public ServiceResult<TypesEnt> AddTtpe(TypesEnt type)
+        public ServiceResult<Category> AddTtpe(Category type)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<TypesEnt> DeleteType(int id)
+        public ServiceResult<Category> DeleteType(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<TypesEnt> GetTypeById(int id)
+        public ServiceResult<Category> GetTypeById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<IEnumerable<TypesEnt>> ListType()
+        public ServiceResult<IEnumerable<Category>> ListType()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<TypesEnt> UpdateType(TypesEnt type)
+        public ServiceResult<Category> UpdateType(Category type)
         {
             throw new NotImplementedException();
         }

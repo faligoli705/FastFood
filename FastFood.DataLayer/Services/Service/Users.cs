@@ -8,27 +8,27 @@ namespace FastFood.DataLayer.Services.Service
 {
     public class Users : IUser
     {
-        public ServiceResult<UsersEnt> AddTtpe(UsersEnt users)
+        public ServiceResult<Customers> AddTtpe(Customers users)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<UsersEnt> DeleteUsers(int id)
+        public ServiceResult<Customers> DeleteUsers(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<UsersEnt> GetUsersById(int id)
+        public ServiceResult<Customers> GetUsersById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<IEnumerable<UsersEnt>> ListUsers()
+        public ServiceResult<IEnumerable<Customers>> ListUsers()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<UsersEnt> UpdateUsers(UsersEnt users)
+        public ServiceResult<Customers> UpdateUsers(Customers users)
         {
             throw new NotImplementedException();
         }

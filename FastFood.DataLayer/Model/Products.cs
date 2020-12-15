@@ -9,15 +9,20 @@ namespace FastFood.DataLayer.Model
     public class Products
     {
         [Key]
-        public int IdProducts { get; set; }
+        public int ProductID { get; set; }
         [MaxLength(50)]
-        public string NameFood { get; set; }
-        public int IdType { get; set; }
-        public decimal Price { get; set; }
-        public DateTime DateSave { get; set; }
-        public DateTime TimeSave { get; set; }
-        public DateTime TimeAmadehSazi { get; set; }
-        public string PicUrl { get; set; }
+        public string ProductName { get; set; }
+        public int CategoryId { get; set; }
+        public decimal UnitPrice { get; set; }
+        public DateTime ProductPreparationTime { get; set; }
+        public DateTime ProductCreateDate { get; set; }
+        public DateTime ProductCreateTime { get; set; }
+        public DateTime ProductUpdateDate { get; set; }
+        public DateTime ProductUpdateTime { get; set; }
+        public DateTime ProductDeleteDate { get; set; }
+        public DateTime ProductDeleteTime { get; set; }
+        public string ProductPicUrl { get; set; }
+        public int Status { get; set; }
         public bool IsDelete { get; set; }
     }
 }

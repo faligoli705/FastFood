@@ -8,27 +8,27 @@ namespace FastFood.DataLayer.Services.Service
 {
     public class Factors : IFactory
     {
-        public ServiceResult<FactorsEnt> AddFactory(FactorsEnt factorys)
+        public ServiceResult<StoreInvoicing> AddFactory(StoreInvoicing factorys)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<FactorsEnt> DeleteFactorys(int id)
+        public ServiceResult<StoreInvoicing> DeleteFactorys(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<FactorsEnt> GetFactorysById(int id)
+        public ServiceResult<StoreInvoicing> GetFactorysById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<IEnumerable<FactorsEnt>> ListFactorys()
+        public ServiceResult<IEnumerable<StoreInvoicing>> ListFactorys()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<FactorsEnt> UpdateFactorys(FactorsEnt factorys)
+        public ServiceResult<StoreInvoicing> UpdateFactorys(StoreInvoicing factorys)
         {
             throw new NotImplementedException();
         }

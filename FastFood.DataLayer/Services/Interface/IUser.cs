@@ -6,12 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace FastFood.DataLayer.Services.Interface
+{ 
     public interface IUser
     {
-        ServiceResult<UsersEnt> AddTtpe(UsersEnt users);
-        ServiceResult<UsersEnt> UpdateUsers(UsersEnt users);
-        ServiceResult<UsersEnt> DeleteUsers(int id);
-        ServiceResult<UsersEnt> GetUsersById(int id);
-        ServiceResult<IEnumerable<UsersEnt>> ListUsers();
+        ServiceResult<Customers> AddTtpe(Customers users);
+        ServiceResult<Customers> UpdateUsers(Customers users);
+        ServiceResult<Customers> DeleteUsers(int id);
+        ServiceResult<Customers> GetUsersById(int id);
+        ServiceResult<IEnumerable<Customers>> ListUsers();
     }
 }

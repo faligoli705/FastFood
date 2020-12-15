@@ -10,10 +10,10 @@ namespace FastFood.DataLayer.DataAccess
 
         }
         #region Table
-        public DbSet<UsersEnt> Users { get; set; }
-        public DbSet<ProductsEnt> Products { get; set; }
-        public DbSet<TypesEnt> Types { get; set; }
-        public DbSet<FactorsEnt> Factors { get; set; }
+        public DbSet<Customers> Users { get; set; }
+        public DbSet<Products> Products { get; set; }
+        public DbSet<Category> Types { get; set; }
+        public DbSet<StoreInvoicing> Factors { get; set; }
         #endregion
     }
 }

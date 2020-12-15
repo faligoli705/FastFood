@@ -374,9 +374,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "EntityFrameworkProfiler": {
+            "AngularJS.Core": {
               "target": "Package",
-              "version": "[6.0.6017, )"
+              "version": "[1.8.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

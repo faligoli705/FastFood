@@ -16,7 +16,7 @@ namespace FastFood.DataLayer.Services.Service
         {
             this._context = context;
         }
-        public ServiceResult<ProductsEnt> AddProduct(ProductsEnt product)
+        public ServiceResult<DomainClass.Domain.Entities.Products> AddProduct(DomainClass.Domain.Entities.Products product)
         {
             var errors = new List<string>();
             if (string.IsNullOrEmpty(product.NameFood))
@@ -26,33 +26,33 @@ namespace FastFood.DataLayer.Services.Service
                 errors.Add("Name Food is dupplicate");
            
             if (errors.Any())
-                return ServiceResult<ProductsEnt>.Failed(errors);
+                return ServiceResult<DomainClass.Domain.Entities.Products>.Failed(errors);
 
              
             _context.Products.Add(product);
             var result = _context.SaveChanges();
 
             if (result > 0)
-                return ServiceResult<ProductsEnt>.Succeed(product);
-            return ServiceResult<ProductsEnt>.Failed(new List<string> { "Data not inserted!!!" });
+                return ServiceResult<DomainClass.Domain.Entities.Products>.Succeed(product);
+            return ServiceResult<DomainClass.Domain.Entities.Products>.Failed(new List<string> { "Data not inserted!!!" });
         }
 
-        public ServiceResult<ProductsEnt> DeleteProduct(int id)
+        public ServiceResult<DomainClass.Domain.Entities.Products> DeleteProduct(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<ProductsEnt> GetProductById(int id)
+        public ServiceResult<DomainClass.Domain.Entities.Products> GetProductById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<IEnumerable<ProductsEnt>> ListProduct()
+        public ServiceResult<IEnumerable<DomainClass.Domain.Entities.Products>> ListProduct()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<ProductsEnt> UpdateProduct(ProductsEnt product)
+        public ServiceResult<DomainClass.Domain.Entities.Products> UpdateProduct(DomainClass.Domain.Entities.Products product)
         {
             throw new NotImplementedException();
         }

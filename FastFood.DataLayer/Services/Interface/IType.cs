@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace FastFood.DataLayer.Services.Interface
     public interface IType
     {
-        ServiceResult<TypesEnt> AddTtpe(TypesEnt type);
-        ServiceResult<TypesEnt> UpdateType(TypesEnt type);
-        ServiceResult<TypesEnt> DeleteType(int id);
-        ServiceResult<TypesEnt> GetTypeById(int id);
-        ServiceResult<IEnumerable<TypesEnt>> ListType();
+        ServiceResult<Category> AddTtpe(Category type);
+        ServiceResult<Category> UpdateType(Category type);
+        ServiceResult<Category> DeleteType(int id);
+        ServiceResult<Category> GetTypeById(int id);
+        ServiceResult<IEnumerable<Category>> ListType();
     }
 }

@@ -9,10 +9,10 @@ namespace FastFood.DataLayer.Services.Interface
 {
     public interface IProduct
     {
-        ServiceResult<ProductsEnt> AddProduct(ProductsEnt product);
-        ServiceResult<ProductsEnt> UpdateProduct(ProductsEnt product);
-        ServiceResult<ProductsEnt> DeleteProduct(int id);
-        ServiceResult<ProductsEnt> GetProductById(int id);
-        ServiceResult<IEnumerable<ProductsEnt>> ListProduct();
+        ServiceResult<Products> AddProduct(Products product);
+        ServiceResult<Products> UpdateProduct(Products product);
+        ServiceResult<Products> DeleteProduct(int id);
+        ServiceResult<Products> GetProductById(int id);
+        ServiceResult<IEnumerable<Products>> ListProduct();
     }
 }
