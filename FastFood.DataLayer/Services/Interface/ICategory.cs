@@ -7,7 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace FastFood.DataLayer.Services.Interface
-    public interface IType
+{ 
+    public interface ICategory
     {
         ServiceResult<Category> AddTtpe(Category type);
         ServiceResult<Category> UpdateType(Category type);

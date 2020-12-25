@@ -6,7 +6,7 @@ using System.Text;
 
 namespace FastFood.DataLayer.Services.Service
 {
-    public class Types : IType
+    public class Types : ICategory
     {
         public ServiceResult<Category> AddTtpe(Category type)
         {

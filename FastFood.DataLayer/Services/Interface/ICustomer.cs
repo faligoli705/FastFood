@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace FastFood.DataLayer.Services.Interface
 { 
-    public interface IUser
+    public interface ICustomer
     {
-        ServiceResult<Customers> AddTtpe(Customers users);
-        ServiceResult<Customers> UpdateUsers(Customers users);
+        ServiceResult<Customers> AddTtype(Customers customers);
+        ServiceResult<Customers> UpdateUsers(Customers customers);
         ServiceResult<Customers> DeleteUsers(int id);
         ServiceResult<Customers> GetUsersById(int id);
-        ServiceResult<IEnumerable<Customers>> ListUsers();
+        ServiceResult<IEnumerable<Customers>> Listcustomers();
     }
 }

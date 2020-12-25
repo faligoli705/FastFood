@@ -17,22 +17,22 @@ namespace FastFood
     {
         public static void Main(string[] args)
         {             
-            var cfg = new Configuration();
-            cfg.DataBaseIntegration(x =>
-            {
-                x.ConnectionString = "Data Source=DESKTOP-9AQA9OL;Initial Catalog=FastFood;Integrated Security=false; User=sa; Password=123456;";
-                x.Driver<SqlClientDriver>();
-                x.Dialect<MsSql2012Dialect>();
+            //var cfg = new Configuration();
+            //cfg.DataBaseIntegration(x =>
+            //{
+            //    x.ConnectionString = "Data Source=DESKTOP-9AQA9OL;Initial Catalog=FastFood;Integrated Security=false; User=sa; Password=123456;";
+            //    x.Driver<SqlClientDriver>();
+            //    x.Dialect<MsSql2012Dialect>();
 
-            });
-            cfg.AddAssembly(Assembly.GetExecutingAssembly());
-           var sessionFactory= cfg.BuildSessionFactory();
-            using(var session= sessionFactory.OpenSession())
-            using (var tx = session.BeginTransaction())
-            {
-                //perform database logic
-                tx.Commit();
-            }
+            //});
+            //cfg.AddAssembly(Assembly.GetExecutingAssembly());
+           //var sessionFactory= cfg.BuildSessionFactory();
+            //using(var session= sessionFactory.OpenSession())
+            //using (var tx = session.BeginTransaction())
+            //{
+            //    //perform database logic
+            //    tx.Commit();
+            //}
 
 
                 CreateHostBuilder(args).Build().Run();

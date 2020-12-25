@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FastFood.DataLayer.Services.Interface
 {
-    public interface IFactory
+    public interface IStoreInvoicing
     {
         ServiceResult<StoreInvoicing> AddFactory(StoreInvoicing factorys);
         ServiceResult<StoreInvoicing> UpdateFactorys(StoreInvoicing factorys);

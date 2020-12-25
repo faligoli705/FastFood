@@ -1,0 +1,79 @@
+﻿@model IEnumerable<FastFood.DataLayer.Model.StoreInvoicing>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StoreInvoicing</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoicingId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreInvoicingCreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreInvoicingUpdateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreInvoicingDeleteDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreInvoicingStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDelete)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoicingId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoreInvoicingCreateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoreInvoicingUpdateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoreInvoicingDeleteDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoreInvoicingStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDelete)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

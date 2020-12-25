@@ -29,21 +29,21 @@ namespace FastFood
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var cfg = new Configuration();
-            cfg.DataBaseIntegration(x =>
-            {
-                x.ConnectionString = Configuration.GetConnectionString("FastFoodConnection");
-                x.Driver<SqlClientDriver>();
-                x.Dialect<MsSql2012Dialect>();
-            });
+            //var cfg = new Configuration();
+            //cfg.DataBaseIntegration(x =>
+            //{
+            //    x.ConnectionString = Configuration.GetConnectionString("FastFoodConnection");
+            //    x.Driver<SqlClientDriver>();
+            //    x.Dialect<MsSql2012Dialect>();
+            //});
 
-            cfg.AddAssembly(Assembly.GetExecutingAssembly());
-            var sessionFactory = cfg.BuildSessionFactory();
-            using (var session = sessionFactory.OpenSession())
-            using (var tx = session.BeginTransaction())
-            {
-                tx.Commit();
-            }
+            //cfg.AddAssembly(Assembly.GetExecutingAssembly());
+            //var sessionFactory = cfg.BuildSessionFactory();
+            //using (var session = sessionFactory.OpenSession())
+            //using (var tx = session.BeginTransaction())
+            //{
+            //    tx.Commit();
+            //}
 
             services.AddMvc();
             services.AddDbContext<FastFoodContext>(options =>
@@ -52,11 +52,10 @@ namespace FastFood
             });
             services.AddControllersWithViews();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            services.AddScoped<IFactory, Factors>();
+            //services.AddScoped<IStoreInvoicing, Factors>();
             services.AddTransient<IProduct, Products>();
-            services.AddTransient<IType, Types>();
-            services.AddTransient<IUser,Users>(); 
-
+            services.AddTransient<ICategory, Types>();
+            services.AddTransient<ICustomer,Customers>();
              services.AddControllers();
 
             services.AddSwaggerGen(c =>

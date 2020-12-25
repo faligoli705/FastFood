@@ -19,10 +19,10 @@ namespace FastFood.DataLayer.Services.Service
         public ServiceResult<DomainClass.Domain.Entities.Products> AddProduct(DomainClass.Domain.Entities.Products product)
         {
             var errors = new List<string>();
-            if (string.IsNullOrEmpty(product.NameFood))
+            if (string.IsNullOrEmpty(product.ProductName))
                 errors.Add("Name is Null");
 
-            if (_context.Products.Any(a => a.NameFood == product.NameFood))
+            if (_context.Products.Any(a => a.ProductName == product.ProductName))
                 errors.Add("Name Food is dupplicate");
            
             if (errors.Any())

@@ -19,178 +19,263 @@ namespace FastFood.DataLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.FactorsEnt", b =>
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Category", b =>
                 {
-                    b.Property<long>("IdFactor")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("AddressUser")
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
-
-                    b.Property<DateTime>("DateSave")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdProdut")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ProductsIdProducts")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QtyFood")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("TimeSave")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("UserIdUser")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("IdFactor");
-
-                    b.HasIndex("ProductsIdProducts");
-
-                    b.HasIndex("UserIdUser");
-
-                    b.ToTable("Factors");
-                });
-
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.ProductsEnt", b =>
-                {
-                    b.Property<int>("IdProducts")
+                    b.Property<int>("CategoryID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<DateTime>("DateSave")
+                    b.Property<DateTime>("CategoryCreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdType")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("NameFood")
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.Property<string>("PicUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<DateTime>("TimeAmadehSazi")
+                    b.Property<DateTime>("CategoryDeleteDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("TimeSave")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("TypesIdType")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdProducts");
-
-                    b.HasIndex("TypesIdType");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.TypesEnt", b =>
-                {
-                    b.Property<int>("IdType")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("CategoryName")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("IdType");
+                    b.Property<DateTime>("CategoryUpdateDate")
+                        .HasColumnType("datetime2");
 
-                    b.ToTable("Types");
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ProductsProductID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CategoryID");
+
+                    b.HasIndex("ProductsProductID");
+
+                    b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.UsersEnt", b =>
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Customers", b =>
                 {
-                    b.Property<int>("IdUser")
+                    b.Property<int>("CustomerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("AddressUser")
+                    b.Property<string>("Address")
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
+                    b.Property<DateTime>("CustomerCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CustomerDeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CustomerUpdateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("FName")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
                     b.Property<string>("LName")
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<int>("Mobile")
                         .HasColumnType("int");
 
-                    b.Property<int>("NationalCode")
+                    b.Property<int>("PasswordCustomer")
                         .HasColumnType("int");
 
-                    b.Property<int>("Pass")
+                    b.Property<int>("StatusCustomer")
                         .HasColumnType("int");
 
-                    b.Property<string>("PicUrl")
+                    b.Property<long?>("StoreInvoicingInvoicingId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("CustomerId");
+
+                    b.HasIndex("StoreInvoicingInvoicingId");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Products", b =>
+                {
+                    b.Property<int>("ProductID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ProductCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ProductDeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProductName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ProductPicUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("StatusAdmin")
+                    b.Property<DateTime>("ProductPreparationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ProductUpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.HasKey("IdUser");
+                    b.Property<long?>("StoreInvoicingDetailsInvoicingDetailId")
+                        .HasColumnType("bigint");
 
-                    b.ToTable("Users");
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("ProductID");
+
+                    b.HasIndex("StoreInvoicingDetailsInvoicingDetailId");
+
+                    b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.FactorsEnt", b =>
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.StoreInvoicing", b =>
                 {
-                    b.HasOne("FastFood.DomainClass.Domain.Entities.ProductsEnt", "Products")
-                        .WithMany()
-                        .HasForeignKey("ProductsIdProducts");
+                    b.Property<long>("InvoicingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .UseIdentityColumn();
 
-                    b.HasOne("FastFood.DomainClass.Domain.Entities.UsersEnt", "User")
-                        .WithMany()
-                        .HasForeignKey("UserIdUser");
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
 
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("StoreInvoicingCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StoreInvoicingDeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("StoreInvoicingDetailsInvoicingDetailId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("StoreInvoicingStatus")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StoreInvoicingUpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("InvoicingId");
+
+                    b.HasIndex("StoreInvoicingDetailsInvoicingDetailId");
+
+                    b.ToTable("StoreInvoicings");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.StoreInvoicingDetails", b =>
+                {
+                    b.Property<long>("InvoicingDetailId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("CurrentPrice")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("InvoicingDetailCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("InvoicingDetailDeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvoicingDetailStatus")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("InvoicingDetailUpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvoicingId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LaborCustomerItem")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Qty")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("InvoicingDetailId");
+
+                    b.ToTable("StoreInvoicingDetails");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Category", b =>
+                {
+                    b.HasOne("FastFood.DomainClass.Domain.Entities.Products", null)
+                        .WithMany("Category")
+                        .HasForeignKey("ProductsProductID");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Customers", b =>
+                {
+                    b.HasOne("FastFood.DomainClass.Domain.Entities.StoreInvoicing", null)
+                        .WithMany("Customers")
+                        .HasForeignKey("StoreInvoicingInvoicingId");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Products", b =>
+                {
+                    b.HasOne("FastFood.DomainClass.Domain.Entities.StoreInvoicingDetails", null)
+                        .WithMany("Products")
+                        .HasForeignKey("StoreInvoicingDetailsInvoicingDetailId");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.StoreInvoicing", b =>
+                {
+                    b.HasOne("FastFood.DomainClass.Domain.Entities.StoreInvoicingDetails", null)
+                        .WithMany("StoreInvoicings")
+                        .HasForeignKey("StoreInvoicingDetailsInvoicingDetailId");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.Products", b =>
+                {
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.StoreInvoicing", b =>
+                {
+                    b.Navigation("Customers");
+                });
+
+            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.StoreInvoicingDetails", b =>
+                {
                     b.Navigation("Products");
 
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("FastFood.DomainClass.Domain.Entities.ProductsEnt", b =>
-                {
-                    b.HasOne("FastFood.DomainClass.Domain.Entities.TypesEnt", "Types")
-                        .WithMany()
-                        .HasForeignKey("TypesIdType");
-
-                    b.Navigation("Types");
+                    b.Navigation("StoreInvoicings");
                 });
 #pragma warning restore 612, 618
         }

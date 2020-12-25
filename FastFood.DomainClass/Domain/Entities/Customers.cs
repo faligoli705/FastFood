@@ -20,11 +20,11 @@ namespace FastFood.DomainClass.Domain.Entities
         public int StatusCustomer { get; set; }
         public Int32 PasswordCustomer { get; set; }
         public DateTime CustomerCreateDate { get; set; }
-        public DateTime CustomerCreateTime { get; set; }
+        //public DateTime CustomerCreateTime { get; set; }
         public DateTime CustomerUpdateDate { get; set; }
-        public DateTime CustomerUpdateTime { get; set; }
+        //public DateTime CustomerUpdateTime { get; set; }
         public DateTime CustomerDeleteDate { get; set; }
-        public DateTime CustomerDeleteTime { get; set; }
+        //public DateTime CustomerDeleteTime { get; set; }
         public bool IsDelete { get; set; }
 
     }

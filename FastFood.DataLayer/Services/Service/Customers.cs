@@ -6,29 +6,29 @@ using System.Text;
 
 namespace FastFood.DataLayer.Services.Service
 {
-    public class Users : IUser
+    public class Customers : ICustomer
     {
-        public ServiceResult<Customers> AddTtpe(Customers users)
+        public ServiceResult<DomainClass.Domain.Entities.Customers> AddTtype(DomainClass.Domain.Entities.Customers customers)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<Customers> DeleteUsers(int id)
+        public ServiceResult<DomainClass.Domain.Entities.Customers> DeleteUsers(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<Customers> GetUsersById(int id)
+        public ServiceResult<DomainClass.Domain.Entities.Customers> GetUsersById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<IEnumerable<Customers>> ListUsers()
+        public ServiceResult<IEnumerable<DomainClass.Domain.Entities.Customers>> Listcustomers()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult<Customers> UpdateUsers(Customers users)
+        public ServiceResult<DomainClass.Domain.Entities.Customers> UpdateUsers(DomainClass.Domain.Entities.Customers customers)
         {
             throw new NotImplementedException();
         }
